@@ -52,7 +52,7 @@ and configure it as follows:
 - name: Setup Python
   uses: actions/setup-python@v2
   with:
-    python-version: 3.6
+    python-version: 3
 
 - name: Publish Unit Test Results
   uses: EnricoMi/publish-unit-test-result-action@v1.2
