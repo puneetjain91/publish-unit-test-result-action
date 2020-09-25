@@ -37,6 +37,8 @@ runs:
     - name: Publish Unit Test Results
       run: |
         echo '##[group]Publish Unit Test Results'
+        echo $check_name
+        echo $CHECK_NAME
         python $GITHUB_ACTION_PATH/publish_unit_test_results.py
         echo '##[endgroup]'
       env:
