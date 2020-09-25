@@ -32,6 +32,7 @@ runs:
         pip install --upgrade --force --no-cache-dir virtualenv
         virtualenv venv
         source venv/bin/activate
+        python -m pip install --upgrade --force --no-cache-dir pip
         pip install --upgrade --force --no-cache-dir -r $GITHUB_ACTION_PATH/requirements.txt
         echo '##[endgroup]'
       shell: bash
