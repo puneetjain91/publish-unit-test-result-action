@@ -42,12 +42,12 @@ runs:
         python $GITHUB_ACTION_PATH/publish_unit_test_results.py
         echo '##[endgroup]'
       env:
-        github_token: ${{ inputs.github_token }}
-        check_name: ${{ inputs.check_name }}
-        files: ${{ inputs.files }}
-        report_individual_runs: ${{ inputs.report_individual_runs }}
-        deduplicate_classes_by_file_name: ${{ inputs.deduplicate_classes_by_file_name }}
-        log_level: ${{ inputs.log_level }}
+        GITHUB_TOKEN: ${{ inputs.github_token }}
+        CHECK_NAME: ${{ inputs.check_name }}
+        FILES: ${{ inputs.files }}
+        REPORT_INDIVIDUAL_RUNS: ${{ inputs.report_individual_runs }}
+        DEDUPLICATE_CLASSES_BY_FILE_NAME: ${{ inputs.deduplicate_classes_by_file_name }}
+        LOG_LEVEL: ${{ inputs.log_level }}
       shell: bash
 
 branding:
