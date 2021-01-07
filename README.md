@@ -55,7 +55,7 @@ and configure it as follows:
     python-version: 3
 
 - name: Publish Unit Test Results
-  uses: EnricoMi/publish-unit-test-result-action@v1.2
+  uses: EnricoMi/publish-unit-test-result-action@branch-composite-action
   if: always()
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
